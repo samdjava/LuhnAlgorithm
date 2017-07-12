@@ -14,8 +14,8 @@ public class LuhnTest  {
         Assert.assertEquals(true,luhnAlgo.verifyCardNumber("4408 0412 3456 7893"));
         Assert.assertEquals(false,luhnAlgo.verifyCardNumber("4438 0412 3456 7893"));
     }
-
-    @Test
+    //Remove individual junit post refactoring code
+   /* @Test
     public void testTokenize(){
         String cardNumber = "4408041234567893"; // Input from the remove whitespace method
         int arr[] = {4,4,0,8,0,4,1,2,3,4,5,6,7,8,9,3};
@@ -46,6 +46,6 @@ public class LuhnTest  {
     public void testCalculateScore(){
         Assert.assertEquals(0,luhnAlgo.calculateLuhnScore(70));
         Assert.assertEquals(5,luhnAlgo.calculateLuhnScore(75));
-    }
+    }*/
 
 }
