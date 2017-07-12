@@ -30,13 +30,13 @@ public class LuhnTest  {
     public void testTranformToLuhnSequence(){
         int arr[] = {4,4,0,8,0,4,1,2,3,4,5,6,7,8,9,3};
         int luhnArray[] = {8,4,0,8,0,4,2,2,6,4,10,6,14,8,18,3};
-        Assert.assertArrayEquals(luhnAlgo.tranformToLuhnSequence(arr), luhnArray);
+        Assert.assertArrayEquals(luhnArray,luhnAlgo.tranformToLuhnSequence(arr));
     }
     @Test
     public void testTranformToDigitArray(){
         int arr[] = {8,4,0,8,0,4,2,2,6,4,10,6,14,8,18,3};
         int transformedArray[] = {8,4,0,8,0,4,2,2,6,4,1,0,6,1,4,8,1,8,3};
-        Assert.assertArrayEquals(luhnAlgo.tranformToDigitArray(arr), transformedArray);
+        Assert.assertArrayEquals(transformedArray,luhnAlgo.tranformToDigitArray(arr));
     }
     @Test
     public void testRemoveWhiteSpaces(){
